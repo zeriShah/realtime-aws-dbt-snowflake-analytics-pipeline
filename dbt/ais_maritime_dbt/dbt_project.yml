@@ -1,0 +1,14 @@
+name: 'ais_maritime_dbt'
+
+version: '1.0.0'
+
+config-version: 2
+
+profile: 'ais_maritime_dbt'
+
+model-paths: ["models"]
+
+models:
+  ais_maritime_dbt:
+    gold:
+      +materialized: table

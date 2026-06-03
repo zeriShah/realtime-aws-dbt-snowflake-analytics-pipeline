@@ -1,0 +1,40 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.crt
+*.cer
+*.jks
+*credential*
+*credentials*
+*secret*
+*token*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# dbt local artifacts and credentials
+dbt/profiles/profiles.yml
+dbt/profiles/.user.yml
+profiles.yml
+dbt_run.log
+*.log
+logs/
+target/
+dbt/ais_maritime_dbt/logs/
+dbt/ais_maritime_dbt/target/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

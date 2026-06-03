@@ -1,0 +1,19 @@
+ais_maritime_dbt:
+  target: dev
+
+  outputs:
+    dev:
+      type: snowflake
+
+      account: YOUR_SNOWFLAKE_ACCOUNT
+
+      user: YOUR_SNOWFLAKE_USERNAME
+      password: YOUR_SNOWFLAKE_PASSWORD
+
+      role: ACCOUNTADMIN
+      database: AIS_MARITIME_DB
+      warehouse: COMPUTE_WH
+      schema: GOLD
+
+      threads: 4
+      client_session_keep_alive: False
