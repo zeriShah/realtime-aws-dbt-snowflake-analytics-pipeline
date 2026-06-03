@@ -6,40 +6,11 @@ This project is a real-time data engineering pipeline that ingests live AIS mari
 
 ---
 
-## Project Architecture
+## Architecture Diagram
 
-```text
-AISStream WebSocket
-        ↓
-Amazon EC2
-        ↓
-Docker
-        ↓
-Python Producer
-        ↓
-Apache Kafka KRaft Topic
-        ↓
-Python Kafka Consumer
-        ↓
-Amazon S3 Raw Layer
-        ↓
-Snowpipe Auto-Ingest
-        ↓
-Snowflake RAW Table
-        ↓
-Snowflake Stream
-        ↓
-Snowflake Task
-        ↓
-Snowflake SILVER Clean Table
-        ↓
-dbt Models
-        ↓
-Snowflake GOLD Tables
-        ↓
-Power BI Dashboard
-```
+The following architecture shows the complete real-time data flow of the project, starting from AIS data generation and ending with business-ready dashboards in Power BI.
 
+![Real-Time Maritime Analytics Architecture](architechture.png)
 ---
 
 ## Tech Stack
